@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+<meta name="description" content="Dinas Kehutanan Kehutanan Dalam Angka">
+<meta name="keywords" content="Kehuatanan Dalam Angka, KDA, Dinas Kehutanan">
+<meta name="author" content="SCOMPTEC">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://sukma.jatimprov.go.id/assets/img/favicon.png">
+<link href="https://sukma.jatimprov.go.id/assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" id="style_components" type="text/css" />
+<link href="https://sukma.jatimprov.go.id/assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+<title>Login</title>
+
+<style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        * {
+            outline: none;
+        }
+
+        .wrapper {
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .form-area {
+            width: 450px;
+            height: 500px;
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.75);
+            background: rgba(244, 244, 245, 0.08);
+        }
+
+        .form-text {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            font-family: poppins;
+            color: #FFF;
+
+        }
+
+        .form-text h1 {
+            text-align: center;
+            margin: 35px 0;
+            font-size: 30px;
+            font-family: Audiowide;
+        }
+
+        .form-text input {
+            display: block;
+            width: 250px;
+            margin: 20px auto;
+            padding: 20px 40px;
+            background: #fafafa;
+            color: #000;
+            border: 0;
+            font-size: 10px;
+            /* text-transform: uppercase; */
+
+        }
+
+        .form-text select {
+            display: block;
+            width: 320px;
+            margin: 20px auto;
+            padding: 20px 40px;
+            background: #fafafa;
+            color: #000;
+            border: 0;
+            font-size: 10px;
+            /* text-transform: uppercase; */
+
+        }
+
+        select {
+            height: 100%;
+        }
+
+        .input-one {
+            position: relative;
+            margin: 0 auto;
+
+        }
+
+        .input-one i {
+            position: absolute;
+            left: 75px;
+            color: #000;
+            top: 17px;
+        }
+
+        .form-text button {
+            width: 330px;
+            margin: 20px auto;
+            display: block;
+            cursor: pointer;
+            text-transform: uppercase;
+            background: #e52844;
+            border: 0;
+            color: #fff;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        .alert {
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        /* Memberikan efek hover pada alert */
+        .alert:hover {
+            background-color: #cc0000;
+        }
+
+        /* Memberikan efek tombol tutup (close button) */
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* Memberikan efek hover pada tombol tutup */
+        .closebtn:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body data-vide-bg="https://sukma.jatimprov.go.id/video/video/scl.mp4">
+<div class="wrapper">
+<div class="form-area">
+<div class="form-text" style="text-align:center;">
+<br>
+<table>
+<tr>
+<td><img src="https://sukma.jatimprov.go.id/asset_fe/img/update_banner.png" style="width: 400px; margin-left: 20px;"></td>
+
+</tr>
+</table>
+<img src="https://sukma.jatimprov.go.id/asset_fe/img/logo-loginfix1.png" style="width: 200px; margin-top: 40px; margin-bottom:40px;">
+<form method="POST" action="https://sukma.jatimprov.go.id/login">
+<input type="hidden" name="_token" value="HFTQOa0peR4D8CEpQlvL7L94oM9wVmtoalRNmtbE"> <div class="input-one" style="margin-bottom:10px">
+<select name="id_kota" id="kota" class="form-control select2" onchange="changeRegencie(this)" style="height: 100%;">
+<option value selected disabled>Pilih Provinsi/Kabupaten/Kota</option>
+<option value="3501">KABUPATEN PACITAN</option>
+<option value="3502">KABUPATEN PONOROGO</option>
+<option value="3503">KABUPATEN TRENGGALEK</option>
+<option value="3504">KABUPATEN TULUNGAGUNG</option>
+<option value="3505">KABUPATEN BLITAR</option>
+<option value="3506">KABUPATEN KEDIRI</option>
+<option value="3507">KABUPATEN MALANG</option>
+<option value="3508">KABUPATEN LUMAJANG</option>
+<option value="3509">KABUPATEN JEMBER</option>
+<option value="3510">KABUPATEN BANYUWANGI</option>
+<option value="3511">KABUPATEN BONDOWOSO</option>
+<option value="3512">KABUPATEN SITUBONDO</option>
+<option value="3513">KABUPATEN PROBOLINGGO</option>
+<option value="3514">KABUPATEN PASURUAN</option>
+<option value="3515">KABUPATEN SIDOARJO</option>
+<option value="3516">KABUPATEN MOJOKERTO</option>
+<option value="3517">KABUPATEN JOMBANG</option>
+<option value="3518">KABUPATEN NGANJUK</option>
+<option value="3519">KABUPATEN MADIUN</option>
+<option value="3520">KABUPATEN MAGETAN</option>
+<option value="3521">KABUPATEN NGAWI</option>
+<option value="3522">KABUPATEN BOJONEGORO</option>
+<option value="3523">KABUPATEN TUBAN</option>
+<option value="3524">KABUPATEN LAMONGAN</option>
+<option value="3525">KABUPATEN GRESIK</option>
+<option value="3526">KABUPATEN BANGKALAN</option>
+<option value="3527">KABUPATEN SAMPANG</option>
+<option value="3528">KABUPATEN PAMEKASAN</option>
+<option value="3529">KABUPATEN SUMENEP</option>
+<option value="3571">KOTA KEDIRI</option>
+<option value="3572">KOTA BLITAR</option>
+<option value="3573">KOTA MALANG</option>
+<option value="3574">KOTA PROBOLINGGO</option>
+<option value="3575">KOTA PASURUAN</option>
+<option value="3576">KOTA MOJOKERTO</option>
+<option value="3577">KOTA MADIUN</option>
+<option value="3578">KOTA SURABAYA</option>
+<option value="3579">KOTA BATU</option>
+<option value="9272">PROVINSI JAWA TIMUR</option>
+<option value="admin">SUPERADMIN</option>
+</select>
+</div>
+<div class="input-one" style="margin-bottom:10px">
+<i class="fa fa-users"></i>
+<select name="id_opd" id="opd" class="select2" onchange="opdOnChange()">
+<option value selected disabled>Pilih Opd</option>
+</select>
+</div>
+<div class="input-one" style="margin-bottom:10px">
+<i class="fa fa-users"></i>
+<select name="id_upt" id="upt" class="select2" onchange="uptOnChange(this)">
+<option value selected disabled>Pilih Upt</option>
+</select>
+</div>
+<div class="input-one">
+<i class="fa fa-users"></i>
+<select name="id_bid" id="bid" class="select2">
+<option value selected disabled>Pilih Bagian</option>
+</select>
+</div>
+<div class="input-one">
+<i class="fa fa-unlock-alt"></i>
+<input type="password" placeholder="password" name="password" id="password">
+</div>
+<button type="submit">Sign In</button>
+</form>
+</div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://sukma.jatimprov.go.id/video/libs/jquery-loader.js"></script>
+<script src="https://sukma.jatimprov.go.id/video/src/jquery.vide.js"></script>
+<script src="https://sukma.jatimprov.go.id/assets/global/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+<script>
+        $(document).ready(function() {
+            $('.select2').select2();
+        });
+
+        function changeRegencie(e) {
+            $('#opd').empty();
+            let id = $(e).val();
+            $.get("https://sukma.jatimprov.go.id/getoptid/" + id, function(data, status) {
+                console.log(data)
+                let html = '<option value="" selected disabled>PILIH</option>';
+                data.forEach(element => {
+                    html += `<option value="${element.id}">${element.name.toUpperCase()}</option>`;
+                });
+                $('#opd').append(html);
+            });
+        }
+
+        function kotaOnChange() {
+            // alert("asd");
+            // $('#upt').append('<option selected value="admin@mail.com">ADMIN</option>');
+            let id_kota = $('#upt').val();
+            $('#bid').empty();
+            ambilbidang(id_kota);
+        }
+
+        function uptOnChange(e) {
+            let id_kota = $(e).val();
+            $('#bid').empty();
+            ambilbidang(id_kota);
+        }
+
+        function opdOnChange() {
+            // alert("asd");
+            // $('#upt').append('<option selected value="admin@mail.com">ADMIN</option>');
+            let id_kota = $('#opd').val();
+            $('#upt').empty();
+            ambilupt(id_kota);
+        }
+
+        function ambilupt(id) {
+            console.log(id)
+            $.ajax({
+                type: 'GET',
+                url: "https://sukma.jatimprov.go.id/getuptid" + "/" + id,
+                dataType: 'JSON',
+                success: function(data) {
+                    console.log(data);
+                    // $('#bid').append('<option selected value="">Pilih User</option>')
+                    $('#upt').append('<option selected value="">Pilih</option>')
+                    // $('#bid').append('<option selected value="admin@mail.com">ADMIN</option>')
+                    // $('#bid').append('<option selected value="1">ADMIN</option>')    
+                    $.each(data, function(key, value) {
+                        // $('#bid').append($("<option></option>").attr("value", value.id).text(value
+                        //     .name.toUpperCase()));
+                        $('#upt').append($("<option></option>").attr("value", value.id).text(value
+                            .name.toUpperCase()));
+                    });
+                },
+                error: function(xmlhttprequest, textstatus, message) {}
+            });
+        }
+
+        function ambilbidang(id) {
+            console.log(id)
+            $.ajax({
+                type: 'GET',
+                url: "https://sukma.jatimprov.go.id/getbidangid" + "/" + id,
+                dataType: 'JSON',
+                success: function(data) {
+                    $('#bid').append('<option selected value="">Pilih User</option>')
+                    // $('#bid').append('<option selected value="admin@mail.com">ADMIN</option>')
+                    // $('#bid').append('<option selected value="1">ADMIN</option>')    
+                    $.each(data, function(key, value) {
+                        $('#bid').append($("<option></option>").attr("value", value.id).text(value
+                            .nama.toUpperCase()));
+                    });
+                },
+                error: function(xmlhttprequest, textstatus, message) {}
+            });
+        }
+    </script>
+</body>
+</html>

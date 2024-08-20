@@ -1,0 +1,93 @@
+GET https://sukma.jatimprov.go.id/login HTTP/1.1
+Host: sukma.jatimprov.go.id
+Connection: keep-alive
+sec-ch-ua: "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: https://sukma.jatimprov.go.id/fe
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: XSRF-TOKEN=eyJpdiI6Ino3QnJ2Q29CQ0IyM3lPMzRlMHJ2eVE9PSIsInZhbHVlIjoiYTQ3cTlxbXVGbTNPZWJZcGRYOEJhcFlwMjMrbldiVFVtcEwxdHgxK1MzOVcyeVpENjhHQ2U0dU1iYTlENmJ0XC8iLCJtYWMiOiIwMzIxNzgyNTU2NGM1N2VkMmRjOGE2ZTdjODJhMGNlMmI4YzNjZWRiZDMyNTAzOTQyNjgzMDUzMDQwM2ExZGViIn0%3D; laravel_session=eyJpdiI6IjJtOUUyV2U5MktYMDBkcHRBVG9GV0E9PSIsInZhbHVlIjoidWZnaWtPVjRzazRBMkNpTnhOSmhhOTIwcU9cLzZPeU52RytoOWJWNjVZU2YwVjJXa0R2bDBub0toVkc1VjNOUHQiLCJtYWMiOiJhZTFkZWJkOTVkNjBlMTEyZWU2MzVlMWNmYTI4NGNjYWNmZjI1NDc2NjQ0N2JlOGQ0ZjI2MmRlY2E2NDk2ODU3In0%3D
+
+
+
+
+POST https://sukma.jatimprov.go.id/login HTTP/1.1
+Host: sukma.jatimprov.go.id
+Connection: keep-alive
+Content-Length: 92
+Cache-Control: max-age=0
+sec-ch-ua: "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+Origin: https://sukma.jatimprov.go.id
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: https://sukma.jatimprov.go.id/login
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: XSRF-TOKEN=eyJpdiI6Imx1c3pwbldseDZWOURMMUVrUThlbUE9PSIsInZhbHVlIjoiNzBGYXlPRUFhQWhqdzZwM3F6MFlKdlNcL3ArQUIrXC9WSzl6dU9EQlkzejVRNHR4SHBGMjA2em1CcWhUdHRzbk96IiwibWFjIjoiYmQ1YWU4NGQ2NDczM2FjYjc1ZmI4ODI4OTI3YTVlNTAxNTI4NDIwYmFlNjBiNTRkZmU0MDYzODVkYTYyOWEyNyJ9; laravel_session=eyJpdiI6IlR1Z1NVdXVsTXZESXJGeUJyQlQ0eVE9PSIsInZhbHVlIjoiXC9qZnpyUVZ6a1hOY0p2cFphdHplc1RYVGFtUHlGV3cxM0NJYVwvdVdocWs3RHhLRktLTFZrVUk0V2tDSFl2RlZKIiwibWFjIjoiNTA2ZTgxY2VhNjIyZWZlODk1MjhmZDc3ZjgzNTRlODQ4MjBiODEzNGNkZjVmYWFkZWZmNTBkYmY1NDE5MjU2ZSJ9
+
+_token=sXcr9vYhfipGgj9dwll0ybZQ6jq9cLJQUlTxHpqK&id_kota=3501&id_opd=917&id_upt=&password=123
+
+
+HTTP/1.1 302 Found
+Date: Tue, 20 Aug 2024 15:32:57 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+Cache-Control: max-age=0, must-revalidate, no-store, nocache, private
+Pragma: no-cache
+Expires: Sun, 02 Jan 1990 00:00:00 GMT
+Set-Cookie: XSRF-TOKEN=eyJpdiI6Imo5OUZFMjYzK1BSYUNIcGY4SnoyQ2c9PSIsInZhbHVlIjoiRHBCU2RyZmlmdEt4a21OMFAwMEFBYks5UU8zc25hXC9iXC9ZQlJ0REI3TlVncU5nUmtib096YWh1a1hiVUE5VHdHIiwibWFjIjoiN2JjNGZmODkzMTdkZGMyMGQwYmExNGQxYzczZTcyNWRmNWIwMTdkZGUwZTU3Mzk1ZTNjNGQ1ZTU5M2M5ZGRiZCJ9; expires=Tue, 20-Aug-2024 17:32:57 GMT; Max-Age=7200; path=/
+Set-Cookie: laravel_session=eyJpdiI6IkYyeDBqRkVla0xoSXl4aVZMNm1FUmc9PSIsInZhbHVlIjoiVEdDbndENjVKd0xTVFJTREljZ2UwNUpxdWp5WCtxbFBFOFhyc0tqMlo2czNEcmxKeWpSbjVDZHdLY0t0a3Z3diIsIm1hYyI6ImU4ZmI5MTg4ZjBiMDU2YjZmYjBjZWZiNjU4NjVhNWExMmM2ZjIyODg2ZGIyNTM4ZWEzMWMwNTA1NDNhOTI3MzcifQ%3D%3D; expires=Tue, 20-Aug-2024 17:32:57 GMT; Max-Age=7200; path=/; httponly
+Location: https://sukma.jatimprov.go.id/hasil_survey
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8b6370611b929cd1-SIN
+Content-Length: 774
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="refresh" content="0;url='https://sukma.jatimprov.go.id/hasil_survey'" />
+<title>Redirecting to https://sukma.jatimprov.go.id/hasil_survey</title>
+</head>
+<body>
+Redirecting to <a href="https://sukma.jatimprov.go.id/hasil_survey">https://sukma.jatimprov.go.id/hasil_survey</a>.
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8b6370611b929cd1","serverTiming":{"name":{"cfL4":true}},"version":"2024.8.0","token":"1f9db69a91b34a5e930231131fd93039"}' crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+GET https://sukma.jatimprov.go.id/hasil_survey HTTP/1.1
+Host: sukma.jatimprov.go.id
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+sec-ch-ua: "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Referer: https://sukma.jatimprov.go.id/login
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: XSRF-TOKEN=eyJpdiI6Imo5OUZFMjYzK1BSYUNIcGY4SnoyQ2c9PSIsInZhbHVlIjoiRHBCU2RyZmlmdEt4a21OMFAwMEFBYks5UU8zc25hXC9iXC9ZQlJ0REI3TlVncU5nUmtib096YWh1a1hiVUE5VHdHIiwibWFjIjoiN2JjNGZmODkzMTdkZGMyMGQwYmExNGQxYzczZTcyNWRmNWIwMTdkZGUwZTU3Mzk1ZTNjNGQ1ZTU5M2M5ZGRiZCJ9; laravel_session=eyJpdiI6IkYyeDBqRkVla0xoSXl4aVZMNm1FUmc9PSIsInZhbHVlIjoiVEdDbndENjVKd0xTVFJTREljZ2UwNUpxdWp5WCtxbFBFOFhyc0tqMlo2czNEcmxKeWpSbjVDZHdLY0t0a3Z3diIsIm1hYyI6ImU4ZmI5MTg4ZjBiMDU2YjZmYjBjZWZiNjU4NjVhNWExMmM2ZjIyODg2ZGIyNTM4ZWEzMWMwNTA1NDNhOTI3MzcifQ%3D%3D

@@ -1,11 +1,19 @@
 // https://sukma.jatimprov.go.id/login
 
 const fs = require("fs");
+var {HttpsProxyAgent} = require('https-proxy-agent');
+var {ProxyAgent} = require("undici");
+
 const base_url = "https://sukma.jatimprov.go.id/login";
 
 var all_cookeies = [];
 
-fetch(base_url)
+// console.log(global.fetch);
+// Object.getOwnPropertyDescriptor(global);
+const proxyAgent = new ProxyAgent('http://127.0.0.1:8888');
+process.env.NODE_TLS_REJECT_UNAUTHORIZED=0
+
+fetch(base_url, { dispatcher: proxyAgent })
   .then((res) => {
     console.log(res);
     if (!res.ok) {
@@ -103,6 +111,7 @@ function doLogin(XSRF_TOKEN, laravel_session, data) {
   
   // Melakukan request menggunakan fetch
   fetch('https://sukma.jatimprov.go.id/login', {
+      dispatcher: proxyAgent,
       method: 'POST',
       headers: {
           'Host': 'sukma.jatimprov.go.id',
@@ -130,10 +139,37 @@ function doLogin(XSRF_TOKEN, laravel_session, data) {
   })
   .then((res) => {
       console.log(res.status);
+
+      const cookieHeader = res.headers.get("Set-Cookie");
+
+    var all_cookeies = [];
+
+    if (cookieHeader) {
+      const cookies = cookieHeader.split("; ");
+      cookies.forEach((cookie) => {
+        // do something with each cookie, e.g. set it in document.cookie
+        cookie = cookie.split(", ");
+        cookie.forEach((element) => {
+          all_cookeies.push(element);
+        });
+      });
+    }
+
+    var laravel_session = all_cookeies.filter((cookie) =>
+      cookie.includes("laravel_session")
+    )[0];
+    var XSRF_TOKEN = all_cookeies.filter((cookie) =>
+      cookie.includes("XSRF-TOKEN")
+    )[0];
+
+    var cookie_txt = XSRF_TOKEN+ "; " + laravel_session;
+
+    fs.writeFileSync('cookie.txt', cookie_txt);
+
       return res.text();  // Mengambil konten dalam bentuk teks
-  }) 
+  })
   .then(data => {
-      console.log('Response:', data);
+      console.log('Response:', data);sav
   })
   .catch(error => {
       console.error('Error:', error);

@@ -32,5 +32,5 @@ fetch(base_url,{
     console.log(res.status);
     return res.text();  // Mengambil konten dalam bentuk teks
 }).then((html) => {
-    console.log(html);
+    // console.log(html);
 });
